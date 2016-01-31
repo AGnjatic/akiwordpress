@@ -4,6 +4,7 @@
 </head>
 <body>
   <header>
-    OVO JE HEADER
+    Ovo je header
+  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
   </header>
   <div class="main">
