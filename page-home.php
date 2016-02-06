@@ -1,10 +1,14 @@
 <?php
+/**
+Template Name: Home page
+**/
 get_header();
 if ( have_posts() ) {
 	while ( have_posts() ) {
 		the_post();
-		
-    the_content();
+		the_content();
+		dynamic_sidebar('sidebar-1');
+
 
 		//
 		// Post Content here
