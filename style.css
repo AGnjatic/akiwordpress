@@ -58,35 +58,70 @@ table {
 
 /* Kraj reseta */
 
-header{
-	height: 170px;
+.wrapper{
 	width: 980px;
+	height: auto;
 	margin: 0 auto;
-background-image: url(img/background.png);
+}
+
+header{
+	max-height: 170px;
+	height: 100%;
+	max-width: 980px;
+	margin: 0 auto;
+background-image: url(img/backgroundnav.png);
+/*border: 2px solid blue;*/
 
 }
 
 .logo a{
-	width: 168px;
-	height: 168px;
+	max-width: 168px;
+	width: 100%;
+	height: 100%;
 	float: left;
+	display: block;
 	background-image: url(img/logo.png);
+	background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+/* For width 768px and smaller: */
+@media only screen and (max-width: 768px) {
+/*
+		.logo a {
+        border: 2px solid red;
+				max-width: 30%;
+    }*/
+
+		.navicons img{
+			width: 30%;
+			height: 30%;
+		}
+
+		header{
+			/*border: 2px solid blue;*/
+			max-height: 25%;
+		}
+
+
 }
 
 .nav{
-	width: 800px;
-	height: 170px;
+	/*width: 500px;
+	height: 170px;*/
+	margin-top: 53px;
 	float: right;
+	/*border: 2px solid red;*/
 }
 
 
 .navicons{
-	width: 130px;
-	font-family: sans-serif;
-	font-size: 28px;
+	/*width: 130px;*/
 	text-align: right;
 	color: #0291D5;
-	margin: 25 0 0 648;
+	/*margin: 25 0 0 648;*/
+	/*border: 2px solid black;*/
 }
 
 .navicons a{
@@ -98,8 +133,8 @@ background-image: url(img/background.png);
 }
 
 .navicons img{
-	width: 50px;
-	height: 50px;
+	max-width: 100%;
+	height: auto;
 }
 
 img{
@@ -109,8 +144,8 @@ img{
 
 .nav ul {
     list-style-type: none;
-		width: 538px;
-    margin: 25 0 0 250;
+		/*width: 538px;
+    margin: 25 0 0 250;*/
     padding: 0;
     overflow: hidden;
 }
@@ -143,13 +178,17 @@ img{
 }
 
 .slideshow{
-	width: 980px;
-	height: 230px;
+	max-width: 980px;
+	/*width: 100%;*/
+	height: 100%;
+	max-height: 230px;
 	background-image: url(img/slideshow.png);
+	background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .main{
-  width: 980px;
+  max-width: 980px;
 	min-height: 800px;
 	height: auto;
   margin: 0 auto;
@@ -191,13 +230,13 @@ h1 {
 
 footer{
 	height: 50px;
-	width: 980px;
+	max-width: 980px;
 	margin: 0 auto;
 	background-color: #424242;
 }
 
 .footertext{
-	width: 980px;
+	max-width: 980px;
 	height: 15px;
 	font-size: 14px;
 	text-align: center;
@@ -236,6 +275,8 @@ footer{
 }
 
 @media screen and (max-width:1000px){
+
+	body,
 	.main,
 	header{
 		width: 100%

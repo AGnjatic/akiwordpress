@@ -5,15 +5,15 @@
   <title><?php bloginfo('name'); ?></title>
 </head>
 <body>
-
+<div id="wrapper">
 <header>
   <div class="logo">
     <a href="<?php echo home_url(); ?>"></a>
   </div>
   <div class="nav">
     <div class="navicons">
-      <a href="https://www.facebook.com/"><img src="https://www.facebook.com/images/fb_icon_325x325.png"></a>
-      <a href="https://www.youtube.com/"><img src="http://squareonesask.ca/wp-content/uploads/2015/05/YouTube.png"></a>
+      <a href="https://www.facebook.com/"><img src="<?php bloginfo('template_directory'); ?>\img\facebook_icon.png"></a>
+      <a href="https://www.youtube.com/"><img src="<?php bloginfo('template_directory'); ?>\img\youtube_icon.png"></a>
     </div>
     <?php
     $args = array(
